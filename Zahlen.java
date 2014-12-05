@@ -6,6 +6,8 @@ package teamarbeit;
 import java.util.LinkedList;
 
 /**
+ * Klasse zur Berechnung vom Minimum, Maximum und der Summe
+ * 
  * @author Toni
  * @version v1.0 / 05.12.2014
  */
