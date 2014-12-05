@@ -23,7 +23,7 @@ public class Zahlen {
 		list.add(zahl);
 	}
 
-	public double Summe() {
+	public double summe() {
 		double s = 0;
 		
 		for(double i : list){
@@ -35,7 +35,7 @@ public class Zahlen {
 		
 	}
 
-	public double Maximum() {
+	public double maximum() {
 		double current = 0;
 		for(double i : list){
 				if(current < i){
@@ -48,7 +48,7 @@ public class Zahlen {
 	}
 
 
-	public double Minimum() {
+	public double minimum() {
 		double current = 0;
 		for(double i : list){
 				if(current > i){
