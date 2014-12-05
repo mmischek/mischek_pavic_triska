@@ -12,12 +12,12 @@ public class Rauminhalt {
 	}
 	
 	
-	public double Kegel(){
+	public double kegel(){
 		return ((Math.PI*r*r)*h)/3;
 		
 	}
 	
-	public double Quader(){
+	public double quader(){
 		return (a*b*c);
 		
 	}
