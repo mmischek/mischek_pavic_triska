@@ -21,6 +21,7 @@ public class Rauminhalt {
 	}
 
 	/**
+	 * Konstruktor fuer beliebiges Objekt
 	 * @param a
 	 * @param b
 	 * @param c

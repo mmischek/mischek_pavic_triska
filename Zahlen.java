@@ -3,6 +3,7 @@
  */
 package teamarbeit;
 
+import java.util.Collections;
 import java.util.LinkedList;
 
 /**
@@ -13,67 +14,85 @@ import java.util.LinkedList;
  */
 public class Zahlen {
 
+	@SuppressWarnings("unused")
 	private int summe;
+	
 	LinkedList<Double> list = new LinkedList<Double>();
 
 	/**
-	 * Standartkonstruktor
+	 * Standart Konstruktor
 	 */
 	public Zahlen() {
-		int summe;
-		
+		this.list= new LinkedList<Double>();
+
 	}
+
 	/**
-	 * Übernimmt ein neues Element und fügt es der Liste hinzu
-	 * @param zahl element das hinzugefügt wird
+	 * ï¿½bernimmt ein neues Element und fï¿½gt es der Liste hinzu
+	 * 
+	 * @param zahl
+	 *            element das hinzugefï¿½gt wird
 	 */
-	public void add(double zahl){
+	public void add(double zahl) {
 		list.add(zahl);
 	}
-	
+
 	/**
 	 * Berechnet die Summe
-	 * @return gibt die Summe der Zahlen zurück
+	 * 
+	 * @return gibt die Summe der Zahlen zurï¿½ck
 	 */
 	public double summe() {
 		double s = 0;
-		
-		for(double i : list){
-			s =+ i;
+
+		for (double i : list) {
+			s += i;
 		}
 		return s;
-		
-		
-		
+
 	}
+
 	/**
 	 * Berechnet das Maximum
-	 * @return gibt das maximum zurück
+	 * 
+	 * @return gibt das maximum zurï¿½ck gelÃ¶st von Pavic
 	 */
 	public double maximum() {
 		double current = 0;
-		for(double i : list){
-				if(current < i){
-					current = i;
-				}
+		for (double i : list) {
+			if (current < i) {
+				current = i;
+			}
 		}
 		return current;
-		
-		
+
 	}
 
-/**
- * Berechnet das Minimum
- * @return gibt das minimum zurück
- */
-	public double minimum() {
+	/**
+	 * Berechnet das Minimum
+	 * 
+	 * @return gibt das minimum zurï¿½ck gelÃ¶st von Pavic (erkennt 0 als min Wert,
+	 *         wobei dieser BEIM Testen nicht hinzufÃ¼gt wurde)
+	 */
+	public double minimumPavic() {
 		double current = 0;
-		for(double i : list){
-				if(current > i){
-					current = i;
-				}
+		for (double i : list) {
+			if (current > i) {
+				current = i;
+			}
 		}
 		return current;
-		
+
+	}
+
+	/**
+	 * so waere es auch mÃ¶glich die Methode zu schreiben 
+	 * geschrieben von Mischek
+	 * (wird verwendet)
+	 * @return Maximum
+	 */
+	public double minimum() {
+		return Collections.min(list);
+
 	}
 }

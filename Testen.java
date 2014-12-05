@@ -7,10 +7,10 @@ package teamarbeit;
  */
 public class Testen {
 
-/**
- * main-Methode
- * @param args
- */
+	/**
+	 * main-Methode zum Testen der Klassen/Methoden
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		/**
 		 * Testen der Klasse Rauminhalt
@@ -45,11 +45,26 @@ public class Testen {
 		
 		//Dreieck Methode wird getestet
 		Flaechen dreieck = new Flaechen(5.6, 2.8, 4.1);
-		System.out.println("Kreis: \na = 5.6 | b = 2.8 | c = 4.1");
-		System.out.println("Flaeche: " + kreis.kreis()+"\n");
+		System.out.println("Dreieck: \na = 5.6 | b = 2.8 | c = 4.1");
+		System.out.println("Flaeche: " + dreieck.dreieck()+"\n");
 		
+		/**
+		 * Testen der Klasse Zahlen
+		 */
+		System.out.println("Zahlen:");
+		Zahlen zahlen = new Zahlen();
+		//Elemete werden hinzugefügt
+		zahlen.add(1);
+		zahlen.add(5);
+		zahlen.add(8);
+		zahlen.add(9);
+		zahlen.add(3);
 		
-		
+		//Methoden werden ausgeführt
+		System.out.println("1 | 5 | 8 | 9 | 3");
+		System.out.println("Summe: " + zahlen.summe());
+		System.out.println("Minimum:" + zahlen.minimum());
+		System.out.println("Maximum: " + zahlen.maximum());
 	}
 
 }
