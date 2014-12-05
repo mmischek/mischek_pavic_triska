@@ -2,7 +2,7 @@ package teamarbeit;
 
 /**
  * 
- * @author Matthias
+ * @author Matthias Mischek
  * @version 1.0
  */
 
