@@ -28,10 +28,10 @@ public class Zahlen {
 	}
 
 	/**
-	 * �bernimmt ein neues Element und f�gt es der Liste hinzu
+	 * uebernimmt ein neues Element und fuegt es der Liste hinzu
 	 * 
 	 * @param zahl
-	 *            element das hinzugef�gt wird
+	 *            element das hinzugefuegt wird
 	 */
 	public void add(double zahl) {
 		list.add(zahl);
@@ -40,7 +40,7 @@ public class Zahlen {
 	/**
 	 * Berechnet die Summe
 	 * 
-	 * @return gibt die Summe der Zahlen zur�ck
+	 * @return gibt die Summe der Zahlen zurueck
 	 */
 	public double summe() {
 		double s = 0;
@@ -55,7 +55,7 @@ public class Zahlen {
 	/**
 	 * Berechnet das Maximum
 	 * 
-	 * @return gibt das maximum zur�ck gelöst von Pavic
+	 * @return gibt das maximum zurueck gelöst von Pavic
 	 */
 	public double maximum() {
 		double current = 0;
@@ -71,7 +71,7 @@ public class Zahlen {
 	/**
 	 * Berechnet das Minimum
 	 * 
-	 * @return gibt das minimum zur�ck gelöst von Pavic (erkennt 0 als min Wert,
+	 * @return gibt das minimum zurueck gelöst von Pavic (erkennt 0 als min Wert,
 	 *         wobei dieser BEIM Testen nicht hinzufügt wurde)
 	 */
 	public double minimumPavic() {
@@ -89,7 +89,7 @@ public class Zahlen {
 	 * so waere es auch möglich die Methode zu schreiben 
 	 * geschrieben von Mischek
 	 * (wird verwendet)
-	 * @return Maximum
+	 * @return Minimum
 	 */
 	public double minimum() {
 		return Collections.min(list);
